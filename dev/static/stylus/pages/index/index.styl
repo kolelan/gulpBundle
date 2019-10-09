@@ -1,40 +1,49 @@
 .bannerSacura
+  display: flex
+  flex-wrap nowrap
+  justify-content flex-end
   width 100%
-  max-width 470px
+  max-width 350px
+  min-width 224px
   height 135px
   background-color #231f20
-  background-image url("../img/general/bannerSacura_background.png")
+  background-image url("../img/general/bannerSacura_background3.png")
   background-repeat no-repeat
   background-size cover
+  border-radius 5px
+.bannerSacura_flexc
+  display: flex;
+  max-width 250px
+  flex-direction column
+  //@media screen and (max-width: 460px)
+  //  marging-left 100px
+  //@media screen and (max-width: 440px)
+  //  marging-left 90px
+  //@media screen and (max-width: 420px)
+  //  marging-left 70px
 .bannerSacura_title
-  font-size: rem(18px)
-  margin-top 10px
+  font-size: rem(12px)
+  margin-top 17px
+  margin-bottom 5px
   color white
   text-transform: uppercase
   font-family: Sans-serif
   font-weight: bold;
-  @media screen and (max-width: 460px)
-    font-size rem(18px)
-  @media screen and (max-width: 440px)
-    font-size rem(18px)
-  @media screen and (max-width: 420px)
-    font-size rem(18px)
+  //@media screen and (max-width: 460px)
+  //  font-size rem(18px)
+  //@media screen and (max-width: 440px)
+  //  font-size rem(18px)
+  //@media screen and (max-width: 420px)
+  //  font-size rem(18px)
   //@media screen and (min-width: 600px)
 	//font-size rem(16px)
-.bannerSacura_flexc
-  margin-left 120px
-  display: flex;
-  flex-direction column
-  @media screen and (max-width: 460px)
-    marging-left 100px
-  @media screen and (max-width: 440px)
-    marging-left 90px
-  @media screen and (max-width: 420px)
-    marging-left 70px
+
 
 .bannerSacura_flexr
   display: flex;
   flex-direction row
+  justify-content space-between
+
 .bannerSacura_flexr
   display: flex;
   flex-direction: row;
@@ -42,10 +51,12 @@
   justify-content: space-around;
   align-content: stretch;
   align-items: center;
+.bannerSacura_img
+  padding 5px
   img
     width 100%
-    @media screen and (max-width: 390px)
-      width 80%
+    //@media screen and (max-width: 390px)
+    //  width 80%
   //img
   //  width 100%
   //@media screen and (max-width: 400px)
